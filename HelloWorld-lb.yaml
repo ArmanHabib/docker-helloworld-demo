@@ -16,12 +16,12 @@ spec:
       containers:
       - name: helloworld
     # enter the path to your image, be sure to include the correct region prefix    
-        image: iad.ocir.io/idfc8ofo0icn/IAD-DOP-LAB09-1-DP-01-User22/github_docker-helloworld-demo:${BUILDRUN_HASH}
+        image: iad.ocir.io/idfc8ofo0icn/iad-dop-lab06-1-ocir-1/oci_sample_webapp_user22:${BUILDRUN_HASH}
         ports:
         - containerPort: 80
       imagePullSecrets:
     # enter the name of the secret you created  
-      - name: <secret-name>
+      - name: ocir-secret-user22
 ---
 apiVersion: v1
 kind: Service
