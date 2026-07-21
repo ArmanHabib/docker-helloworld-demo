@@ -1,8 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: helloworld-deployment-<user22>
-  namespace: ns-<user22>
+  name: helloworld-deployment-user22
+  namespace: ns-user22
 spec:
   selector:
     matchLabels:
@@ -27,7 +27,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: helloworld-service-<userid>
-  namespace: ns-<userid>
+  namespace: ns-user22
   annotations:
     oci.oraclecloud.com/load-balancer-type: "lb"
     service.beta.kubernetes.io/oci-load-balancer-shape: "flexible"
